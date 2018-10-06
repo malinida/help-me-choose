@@ -37,8 +37,10 @@ h1 {
 
 input {
 margin-top: 10px;
+height: 20px;
 
 }
+
 
 .addOption {
 
@@ -67,7 +69,7 @@ button {
 	font-size: 100px;
 	background-color: #d7acd4;
 	height: 100vh;
-	width: 100%;	
+	width: 100%;		
 
 }
 
