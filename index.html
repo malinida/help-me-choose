@@ -3,17 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <title>Food</title>
-    <link href ="styles.css" rel="stylesheet" />
+    <link href ="main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+    <div class="siteContent">
     <h1>Help me choose between...</h1>
     <img src="http://www.greenkitchenstories.com/wp-content/uploads/2013/10/Smoothie_RGY_gks.jpg">
-    <div>
-      <div>
+    <div class="inputSection">
+       <div class="inputs">
         <input placeholder="something">
       </div>
-      <button>Add</button>
+      <button class="addOption">Add</button>
     </div>
-    <button>Go!</button>
+     <button class="buttonComplete">Go!</button>
+     </div>
+     <div class="resultSection">
+       <h1>The winner is ...</h1>
+     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+        var add_option = function() {
+          $('.inputs').append('<input></input>')
+          }
+          $('.addOption').click(add_option)
+
+          var options = []
+          var submit = function () {
+          $('.inputSection').hide()
+          $('.resultSection').css('display', 'flex')
+          $('input').each(function() {
+              options.push($(this).val())
+
+            })
+          var winner = options[Math.floor(Math.random() * options.length)]
+          
+          $('.resultSection').text(winner)
+          $('.siteContent').hide()
+
+          
+        }
+
+          $('.buttonComplete').click(submit)
+          
+    })
+      
+
+    </script>
   </body>
 </html>

@@ -1,0 +1,75 @@
+body {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 150px;
+	background-color: #bae5d5;
+
+	}
+ 
+.siteContent {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+
+h1 {
+
+	font-weight: lighter;
+	font-size: 40px
+	letter-spacing: 2px
+	margin-bottom: 0px;
+}
+
+.inputSection {
+	margin: 50px 0px 80px 0px;
+	width: 400px;
+}
+
+.inputs {
+
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+margin-top: 10px;
+
+}
+
+.addOption {
+
+	margin-top: 10px;
+}
+
+button {
+	background-color:#eec2c2;
+	color: white;
+	height: 40px;
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.buttonComplete {
+	background-color: #238c20;
+}
+
+.resultSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+	background-color: #d7acd4;
+	height: 100vh;
+	width: 100%;	
+
+}
+
+
+
